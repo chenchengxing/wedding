@@ -1,0 +1,25 @@
+.bg-big{position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
+.bg-big img{max-width: none;}
+
+.my-footer{position: fixed;bottom: 0;
+background-color: rgba(255,255,255,0.8);
+  box-shadow:0 -5px 20px #f0f0f0;width: 100%;}
+
+.my-footer li{float: left;}
+.my-footer a{font-family: "微软雅黑";font-size: 16px;display: inline-block;height: 55px;line-height: 55px;text-decoration: none;width: 100px;color: #818181;text-align: center;}
+.my-footer a.link-photos{border-bottom: 5px solid #E67E22;}
+.my-footer a.link-witness{border-bottom: 5px solid #E74C3C;}
+.my-footer a.link-invitation{border-bottom: 5px solid #F1C40F;}
+
+.photoes img.disk:hover{
+	-webkit-animation : rotate1 3s infinite linear;
+}
+
+@-webkit-keyframes rotate1{
+	from {
+		-webkit-transform : rotate(0);
+	}
+	to {
+		-webkit-transform : rotate(360deg);
+	}
+}

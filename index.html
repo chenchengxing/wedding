@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html id="App" ng-app="App" data-ng-controller="AppCtrl" >
+    
+<head>
+    <meta charset="utf-8">
+    <title>
+        AngularJS Animation Demo
+    </title>
+    <link rel="stylesheet" type="text/css" href="./lib/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./lib/font-awesome/css/font-awesome.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./app.css" />
+    <link rel="stylesheet" type="text/css" href="./my.css" />
+    <link rel="stylesheet" type="text/css" href="./flat-ui.css" />
+
+    <!--[if lte IE 8]>
+      <script src="json2.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-class="{'skip-animations':disabled}" class="ng-cloak">
+    <div class="bg-big">
+        <img ng-src="{{bgSrc}}" ng-cloak ng-style="myprop()" img-onload>
+    </div>
+    <div data-ng-view id="ng-view" ng-animate="{enter: 'view-enter'}">
+    </div>
+    <!-- <div id="wrapper">
+        <nav class="app-navigation" ng-controller="NavCtrl" ng-show="{{isShow}}" ng-animate="{enter: 'view-enter'}">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container" ng-click="isShow=true;">
+                        <a class="brand" href="#">
+                            <span class="app-loading-container">
+                                <span class="app-loading-animation" data-ng-class="status">
+                                </span>
+                            </span>
+                            炸油条
+                        </a>
+                        <ul class="nav" ng-click="click();">
+                            <li>
+                                <a href="#/big" ng-model="pageWedding">
+                                    大事件
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/friend">
+                                    我的小伙伴们
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/join-us">
+                                    加入我们
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div> -->
+    <footer class="my-footer">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span4 offset4">
+                    <ul>
+                        <li><a href="#/invitation" class="link-invitation">请柬</a></li>
+                        <li><a href="#/photos" class="link-photos">婚照</a></li>
+                        <li><a href="#/witness" class="link-witness">见证</a></li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js">
+    </script>
+    <script src="./app.js">
+    </script>
+    
+</body>
+
+</html>
